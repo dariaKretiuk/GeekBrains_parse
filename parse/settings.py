@@ -68,7 +68,7 @@ IMAGES_STORE = 'images'
 ITEM_PIPELINES = {
     "parse.pipelines.ParsePipeline": 100,
     "parse.pipelines.SaveToMongoPipeline": 400,
-    "parse.pipelines.GbImagePipeline": 300,
+    # "parse.pipelines.GbImagePipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

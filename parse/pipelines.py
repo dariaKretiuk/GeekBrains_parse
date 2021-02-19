@@ -26,12 +26,12 @@ class SaveToMongoPipeline:
         return item
 
 
-class GbImagePipeline(ImagesPipeline):
-    def get_media_requests(self, item, info):
-        for image_url in item.get("images", []):
-            yield Request(image_url)
-
-    def item_completed(self, results, item, info):
-        if results:
-            item["images"] = [itm[1] for itm in results]
-        return item
+# class GbImagePipeline(ImagesPipeline):
+#     def get_media_requests(self, item, info):
+#         for image_url in item.get("images", []):
+#             yield Request(image_url)
+#
+#     def item_completed(self, results, item, info):
+#         if results:
+#             item["images"] = [itm[1] for itm in results]
+#         return item

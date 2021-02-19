@@ -23,3 +23,21 @@ class InstagramPostItem(scrapy.Item):
     date_parse = scrapy.Field()
     data = scrapy.Field()
     images = scrapy.Field()
+
+
+class InstagramUserItem(scrapy.Item):
+    _id = scrapy.Field()
+    date_parse = scrapy.Field()
+    data = scrapy.Field()
+
+
+class InstagramFollowItem(scrapy.Item):
+    _id = scrapy.Field()
+    date_parse = scrapy.Field()
+    data = scrapy.Field()
+
+
+class InstagramFollowerItem(scrapy.Item):
+    _id = scrapy.Field()
+    date_parse = scrapy.Field()
+    data = scrapy.Field()
